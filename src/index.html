@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
 </head>
 <body>
+<div class="container">
+<div class="video">
+  <video width="1400" height="300" id="video-player" >
+    <source src="files/videoplayback.mp4" type=video/ogg>
+  </video>
+</div>
+<progress id="progress" max="100" value="0"></progress>
+<div>
+  <div>
+    <button id="play">Play</button>
+  </div>
+  <div>
+    <button id="pause">Pause</button>
+  </div>
+  <div>
+    <button id="stop">Stop</button>
+  </div>
+  <div>
+    <button id="quicker">Quicker</button>
+  </div>
+  <div>
+    <button id="slower">Slower</button>
+  </div>
+  <div>
+    <button id="normal">Normal speed</button>
+  </div>
+  <div>
+    <label><input type="range" id="volume" min="0" max="100">Volume</label>
+  </div>
+</div>
+</div>
 
+<ul>
+  <li></li>
+  <li></li>
+</ul>
+<script src="script.js"></script>
 </body>
 </html>
